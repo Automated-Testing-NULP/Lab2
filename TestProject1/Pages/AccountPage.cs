@@ -24,18 +24,20 @@ namespace TestProject1.Pages
             DepositMenuBtn.Click();
             AmountInput.SendKeys(amount.ToString());
             SubmitBtn.Click();
+            Thread.Sleep(10000);
         }
 
         public void Withdraw(int amount)
         {
             WithdrawMenuBtn.Click();
-            Thread.Sleep(1000);
+            Thread.Sleep(10000);
             AmountInput.SendKeys(amount.ToString());
             SubmitBtn.Click();
         }
 
         public string GetMessage()
         {
+            Thread.Sleep(10000);
             return MessageSpan.Text;
         }
     }
